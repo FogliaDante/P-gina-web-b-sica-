@@ -10,25 +10,26 @@
 
 
 <body>
-    <ul>
-        <li>
-            <input type="text" id="name" name="user_name" placeholder="Ingrese su nombre"/>
-        </li>
-        <li>
-            <input type="email" id="mail" name="user_mail" />
-        </li>
-        <li>
-            <input type="number" id="age" name="user_age" />
-        </li>
-    </ul>
+    <form action="">
+        <h1>Iniciar sesión</h1> 
+        <ul>
+            <li>
+                <input type="text" id="name" name="user_name" placeholder="Ingrese su nombre..." required/>
+            </li>
+            <li>
+                <input type="email" id="mail" name="user_mail" placeholder="Ingrese su email..." required :invalid/>
+            </li>
+            <li>
+                <input type="number" id="age" name="user_age" placeholder="Ingrese su edad..." required min="0"/>
+            </li>
+        </ul>
 
 
 
-    <div class="container">
-        <h1>Iniciar sesión</h1>
-        <button class="btn" id="clickMeBtn">Enviar</button>
-    </div>
+        <div class="container">
+            <button class="submit" id="clickMeBtn">Enviar</button>
+        </div>
+    </form>
 
-    <script src="script.js"></script>
 </body>
 </html>
